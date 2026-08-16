@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Visionary Creations — a portfolio of AI products, agents, and creative systems." />
+    <title>Visionary Creations — AI Products</title>
+    <style>
+      :root { --ink:#e9edf9; --muted:#a8b1ca; --line:rgba(255,255,255,.12); --panel:rgba(17,22,42,.76); --violet:#9e8cff; --aqua:#51e5cf; }
+      * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:#080a15; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body::before { content:""; position:fixed; inset:0; z-index:-1; background:radial-gradient(circle at 12% 0%,#35286e 0,transparent 34rem),radial-gradient(circle at 90% 20%,#0a4f59 0,transparent 31rem),linear-gradient(140deg,#080a15,#10162c 70%,#07151a); }
+      .wrap { width:min(1140px,calc(100% - 40px)); margin:auto; } header { padding:28px 0 72px; } nav { display:flex; justify-content:space-between; align-items:center; font-size:.9rem; } .brand { font-weight:800; letter-spacing:.08em; text-transform:uppercase; } .brand i { color:var(--aqua); font-style:normal; } nav a { color:var(--muted); text-decoration:none; }
+      .eyebrow { color:var(--aqua); text-transform:uppercase; letter-spacing:.16em; font-size:.75rem; font-weight:700; } h1 { margin:16px 0 18px; max-width:850px; font-size:clamp(3.2rem,8vw,6.8rem); line-height:.96; letter-spacing:-.07em; } h1 span { color:var(--violet); } .intro { max-width:670px; color:var(--muted); font-size:1.2rem; line-height:1.6; }
+      .numbers { display:flex; flex-wrap:wrap; gap:34px; padding:54px 0 12px; } .number strong { display:block; font-size:1.8rem; } .number small { color:var(--muted); }
+      main { padding:35px 0 88px; } .section-title { display:flex; justify-content:space-between; align-items:end; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:22px; } h2 { margin:0; font-size:1.5rem; letter-spacing:-.04em; } .section-title p { margin:0; color:var(--muted); font-size:.9rem; }
+      .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; } .card { display:flex; flex-direction:column; min-height:270px; padding:25px; border:1px solid var(--line); border-radius:20px; background:var(--panel); backdrop-filter:blur(12px); } .card.featured { grid-column:span 2; min-height:300px; background:linear-gradient(110deg,rgba(103,85,208,.35),rgba(22,34,55,.76)); } .status { align-self:flex-start; border:1px solid currentColor; border-radius:99px; padding:5px 9px; font-size:.7rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; } .live { color:var(--aqua); } .beta { color:#c6b6ff; } .progress { color:#f6c177; } .card h3 { margin:22px 0 9px; font-size:1.65rem; letter-spacing:-.045em; } .card p { margin:0; color:var(--muted); line-height:1.55; max-width:560px; } .links { margin-top:auto; padding-top:26px; display:flex; gap:10px; flex-wrap:wrap; } .links a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:9px; padding:9px 11px; font-size:.84rem; } .links a:first-child { background:var(--ink); color:#0b0d18; border-color:var(--ink); font-weight:700; }
+      footer { border-top:1px solid var(--line); padding:28px 0 42px; color:var(--muted); font-size:.88rem; } @media(max-width:700px){ header{padding-bottom:45px}.grid,.card.featured{grid-column:auto;grid-template-columns:1fr}.grid{grid-template-columns:1fr}.section-title{align-items:start;gap:10px;flex-direction:column} }
+    </style>
+  </head>
+  <body>
+    <header class="wrap">
+      <nav><div class="brand">Visionary <i>Creations</i></div><a href="#projects">Explore projects ↓</a></nav>
+      <div class="eyebrow" style="margin-top:90px">AI products & creative systems</div>
+      <h1>Useful intelligence,<br><span>made tangible.</span></h1>
+      <p class="intro">A growing portfolio of agentic workspaces, memory-first intelligence, and creative AI experiences designed to help people turn ideas into action.</p>
+      <div class="numbers"><div class="number"><strong>6</strong><small>active product initiatives</small></div><div class="number"><strong>3</strong><small>live product experiences</small></div><div class="number"><strong>1</strong><small>shared agent library</small></div></div>
+    </header>
+    <main class="wrap" id="projects">
+      <div class="section-title"><h2>Projects</h2><p>Live experiences, private betas, and works in progress</p></div>
+      <div class="grid">
+        <article class="card featured"><span class="status beta">Private beta</span><h3>Maximus Intelligence OS</h3><p>A voice and chat AI agent built around memory, planning, and execution—designed to help users remember, decide, and get meaningful work done.</p><div class="links"><a href="https://maximus-staging-4wgry41wf-visionarycreations.vercel.app/" target="_blank" rel="noreferrer">Open Maximus</a><a href="https://github.com/gunpowder27/maximus-web" target="_blank" rel="noreferrer">Source</a></div></article>
+        <article class="card"><span class="status live">Live</span><h3>Agent Lobby</h3><p>A shared room where people and AI teammates collaborate, hand off work, and make progress together.</p><div class="links"><a href="https://agent-lobby-alpha.vercel.app/" target="_blank" rel="noreferrer">Open app</a><a href="https://github.com/gunpowder27/agent-lobby" target="_blank" rel="noreferrer">Source</a></div></article>
+        <article class="card"><span class="status live">Live showcase</span><h3>Agent Force</h3><p>A simple, deliberate way to put the right specialist agent on the job—powered by a reusable agent library.</p><div class="links"><a href="https://agent-force-mvp.visionarycreations23.chatgpt.site/" target="_blank" rel="noreferrer">Open app</a><a href="https://github.com/gunpowder27/agent-force" target="_blank" rel="noreferrer">Source</a></div></article>
+        <article class="card"><span class="status live">Live showcase</span><h3>NightTales</h3><p>A story-led creative experience. NightTales is now the consolidated home for all LullubyAI-related work.</p><div class="links"><a href="https://nighttales-story.visionarycreations23.chatgpt.site/" target="_blank" rel="noreferrer">Open experience</a><a href="https://github.com/gunpowder27/nighttales" target="_blank" rel="noreferrer">Source</a></div></article>
+        <article class="card"><span class="status progress">Foundation</span><h3>Agent Library</h3><p>A shared, provider-neutral registry of specialist agents, skills, and contracts supporting the broader ecosystem.</p><div class="links"><a href="https://github.com/gunpowder27/agent-library" target="_blank" rel="noreferrer">View source</a></div></article>
+        <article class="card"><span class="status progress">In progress</span><h3>Universal AI Skins</h3><p>A privacy-first personalization layer for the AI interfaces people use every day.</p><div class="links"><a href="https://github.com/gunpowder27/universal-ai-skins" target="_blank" rel="noreferrer">View source</a></div></article>
+        <article class="card"><span class="status progress">In progress</span><h3>AFTR</h3><p>An early creative project in the Visionary Creations portfolio.</p><div class="links"><a href="https://github.com/gunpowder27/AFTR" target="_blank" rel="noreferrer">View source</a></div></article>
+      </div>
+    </main>
+    <footer class="wrap">© 2026 Visionary Creations · Building humane, useful intelligence.</footer>
+  </body>
+</html>
